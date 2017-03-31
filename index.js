@@ -33,3 +33,7 @@ function geoError(error) {
 function readLocation() {
   navigator.geolocation.getCurrentPosition(geoSuccess, geoError);
 }
+
+function readLocationDelayed() {
+  window.setTimeout(readLocation, 5000);
+}
