@@ -35,5 +35,5 @@ function readLocation() {
 }
 
 function readLocationDelayed() {
-  window.setTimeout(readLocation, 500);
+  window.setTimeout(readLocation, 5000);
 }
