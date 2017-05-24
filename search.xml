@@ -1,4 +1,4 @@
 <OpenSearchDescription>
 <ShortName>Cat Search</ShortName>
-<Url type="text/html" template="https://benfredwells.github.io/permission-tests/index.html?q={searchTerms}"/>
+<Url type="text/html" template="https://benfredwells.github.io/index.html?q={searchTerms}"/>
 </OpenSearchDescription>
