@@ -37,3 +37,13 @@ function readLocation() {
 function readLocationDelayed() {
   window.setTimeout(readLocation, 5000);
 }
+
+function search() {
+  window.location.href="?q="+document.getElementById("search").value;
+}
+
+window.onload = function() {
+  if (window.location.href.includes("index.html?q=")) {
+    document.getElementById("searchResults").style.display = "block";
+  }
+}

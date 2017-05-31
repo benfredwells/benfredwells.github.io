@@ -7,8 +7,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <div class="section">
+    <input id="search" type="text"></input>
+    <button type="button" onclick="search();">Search</button>
+  </div>
+  <div id="searchResults" class="section">
+    <div>Search Results:</div>
+    <img src="cats.jpg" alt="Cats">
+  </div>
   <div id="buttonContainer" class="section">
-    <button type="button" onclick="checkStatus();">Check Status</button>
+    <button type="button" onclick="checkStatus();">Check Geolocation Status</button>
     <button type="button" onclick="readLocation();">Read Location</button>
     <button type="button" onclick="readLocationDelayed();">Read Location Delayed</button>
   </div>
