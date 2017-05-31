@@ -42,7 +42,14 @@ function search() {
   window.location.href="index.html?q="+document.getElementById("search").value;
 }
 
+function searchKeyboardHandler(e) {
+  if (e.keyCode==13) {
+    search();
+  }
+}
+
 window.onload = function() {
+  document.getElementById("search").onkeypress = searchKeyboardHandler;
   if (window.location.href.includes("?q=")) {
     document.getElementById("searchResults").style.display = "block";
   }
