@@ -39,11 +39,11 @@ function readLocationDelayed() {
 }
 
 function search() {
-  window.location.href="?q="+document.getElementById("search").value;
+  window.location.href="index.html?q="+document.getElementById("search").value;
 }
 
 window.onload = function() {
-  if (window.location.href.includes("index.html?q=")) {
+  if (window.location.href.includes("?q=")) {
     document.getElementById("searchResults").style.display = "block";
   }
 }
